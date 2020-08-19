@@ -1,0 +1,28 @@
+{
+  "reconnect_settings": {
+    "exception_handlers": [
+      {
+        "type": "com.anchorfree.vpnsdk.reconnect.SDKReconnectExceptionHandler",
+        "params": [
+          3,
+          [
+            "hydra",
+            "openvpn",
+            "blst"
+          ]
+        ]
+      }
+    ],
+    "use_paused_state": true,
+    "capabilities_check": true
+  },
+  "transport_factory": {
+    "type": "com.anchorfree.vpnsdk.switcher.SwitchableTransportFactory"
+  },
+  "captive_portal_checker": {
+    "type": "com.anchorfree.vpnsdk.reconnect.SDKCaptivePortalChecker"
+  },
+  "network_probe_factory": {
+    "type": "com.anchorfree.vpnsdk.network.probe.DefaultNetworkProbeFactory"
+  }
+}

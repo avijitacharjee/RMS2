@@ -1,0 +1,586 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nimble.vpn"
+4    android:versionCode="1"
+5    android:versionName="2.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:6:5-67
+11-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:12:5-76
+12-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:12:22-73
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:14:5-79
+13-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:14:22-76
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+14-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:15:5-77
+14-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:15:22-74
+15    <permission
+15-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:7:5-9:47
+16        android:name="com.nimble.vpn.permission.C2D_MESSAGE"
+16-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:8:9-63
+17        android:protectionLevel="signature" />
+17-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:9:9-44
+18
+19    <uses-permission android:name="com.nimble.vpn.permission.C2D_MESSAGE" />
+19-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:11:5-79
+19-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:11:22-76
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+20-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:17:5-82
+20-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:17:22-79
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:18:5-68
+21-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:18:22-65
+22    <!--
+23 Required so the device vibrates on receiving a push notification.
+24         Vibration settings of the device still apply.
+25    -->
+26    <uses-permission android:name="android.permission.VIBRATE" />
+26-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:23:5-66
+26-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:23:22-63
+27    <!--
+28 Use to restore notifications the user hasn't interacted with.
+29         They could be missed notifications if the user reboots their device if this isn't in place.
+30    -->
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+31-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:29:5-81
+31-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:29:22-78
+32    <!-- Samsung -->
+33    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+33-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:31:5-86
+33-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:31:22-83
+34    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+34-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:32:5-87
+34-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:32:22-84
+35    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+35-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:33:5-81
+35-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:33:22-78
+36    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+36-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:34:5-83
+36-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:34:22-80
+37    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+37-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:35:5-88
+37-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:35:22-85
+38    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+38-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:36:5-92
+38-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:36:22-89
+39    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+39-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:37:5-84
+39-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:37:22-81
+40    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+40-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:38:5-83
+40-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:38:22-80
+41    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+41-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:39:5-91
+41-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:39:22-88
+42    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+42-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:40:5-92
+42-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:40:22-89
+43    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+43-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:41:5-93
+43-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:41:22-90
+44    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+44-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:42:5-73
+44-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:42:22-70
+45    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+45-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:43:5-82
+45-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:43:22-79
+46    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+46-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:44:5-83
+46-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:44:22-80
+47    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+47-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:45:5-88
+47-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:45:22-85
+48    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+48-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:46:5-89
+48-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:46:22-86
+49    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+49-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:5-110
+49-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
+50    <uses-permission android:name="com.android.vending.BILLING" />
+50-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:10:5-67
+50-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:10:22-64
+51
+52    <application
+52-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:7:5-43:19
+53        android:name="com.nimble.vpn.MainApplication"
+53-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:8:9-54
+54        android:allowBackup="true"
+54-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:9:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.1.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\b2b51ad2129f7ae88186ad90508b79ab\core-1.1.0\AndroidManifest.xml:24:18-86
+56        android:icon="@mipmap/ic_launcher"
+56-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:10:9-43
+57        android:label="@string/app_name"
+57-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:11:9-41
+58        android:networkSecurityConfig="@xml/sdk_captive_portal_network_security"
+58-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:18:9-81
+59        android:supportsRtl="true"
+59-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:12:9-35
+60        android:theme="@style/AppTheme" >
+60-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:13:9-40
+61        <meta-data
+61-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:16:9-18:52
+62            android:name="com.google.android.gms.ads.APPLICATION_ID"
+62-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:17:13-69
+63            android:value="@string/admob_app_ID" />
+63-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:18:13-49
+64
+65        <activity
+65-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:20:9-28:20
+66            android:name="com.nimble.vpn.activity.StepActivity"
+66-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:21:13-64
+67            android:screenOrientation="portrait"
+67-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:22:13-49
+68            android:theme="@style/Splash" >
+68-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:23:13-42
+69            <intent-filter>
+69-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:24:13-27:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:25:17-69
+70-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:25:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:26:17-77
+72-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:26:27-74
+73            </intent-filter>
+74        </activity>
+75        <activity android:name="com.nimble.vpn.activity.PrivacyPolicyActivity" />
+75-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:29:9-82
+75-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:29:19-79
+76        <activity android:name="com.nimble.vpn.activity.TermsToUseActivity" />
+76-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:30:9-79
+76-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:30:19-76
+77        <activity android:name="com.nimble.vpn.activity.SplashActivity" />
+77-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:31:9-75
+77-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:31:19-72
+78        <activity android:name="com.nimble.vpn.activity.MainActivity" />
+78-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:32:9-73
+78-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:32:19-70
+79        <activity android:name="com.nimble.vpn.activity.PremiumActivity" />
+79-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:33:9-76
+79-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:33:19-73
+80
+81        <service
+81-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:35:9-42:19
+82            android:name="com.nimble.vpn.OneSignal.MyNotificationExtenderService"
+82-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:36:13-82
+83            android:exported="false"
+83-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:37:13-37
+84            android:permission="android.permission.BIND_JOB_SERVICE" >
+84-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:38:13-69
+85            <intent-filter>
+85-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:39:13-41:29
+86                <action android:name="com.onesignal.NotificationExtender" />
+86-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:40:17-77
+86-->G:\MyProject\Codecano Sell\NimbleVPN\app\src\main\AndroidManifest.xml:40:25-74
+87            </intent-filter>
+88        </service>
+89
+90        <meta-data
+90-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\e2dadc4ae17fd7e8c4c10c324cf2527f\jetified-sdk-3.3.1\AndroidManifest.xml:12:9-14:63
+91            android:name="com.anchorfree.sdk.transports"
+91-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\e2dadc4ae17fd7e8c4c10c324cf2527f\jetified-sdk-3.3.1\AndroidManifest.xml:13:13-57
+92            android:resource="@raw/hydra_transports_config" />
+92-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\e2dadc4ae17fd7e8c4c10c324cf2527f\jetified-sdk-3.3.1\AndroidManifest.xml:14:13-60
+93        <meta-data
+93-->[com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\0caf23a6d4c1ad511cff4b9d97bc85c6\jetified-openvpn-3.3.1\AndroidManifest.xml:12:9-14:58
+94            android:name="com.anchorfree.vpnsdk.vpn_config.openvpn"
+94-->[com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\0caf23a6d4c1ad511cff4b9d97bc85c6\jetified-openvpn-3.3.1\AndroidManifest.xml:13:13-68
+95            android:resource="@raw/openvpn_vpn_config" />
+95-->[com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\0caf23a6d4c1ad511cff4b9d97bc85c6\jetified-openvpn-3.3.1\AndroidManifest.xml:14:13-55
+96        <meta-data
+96-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:12:9-14:56
+97            android:name="com.anchorfree.vpnsdk.vpn_config.hydra"
+97-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:13:13-66
+98            android:resource="@raw/hydra_vpn_config" />
+98-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:14:13-53
+99
+100        <provider
+100-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:16:9-20:37
+101            android:name="com.anchorfree.sdk.HydraTransportInitProvider"
+101-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:17:13-73
+102            android:authorities="com.nimble.vpn.sdk.transport.hydra"
+102-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:18:13-71
+103            android:exported="false"
+103-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:19:13-37
+104            android:initOrder="1" />
+104-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\072c48af6870e9c828c74a0075e73689\jetified-hydra-3.3.1\AndroidManifest.xml:20:13-34
+105        <provider
+105-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:20:9-24:37
+106            android:name="com.anchorfree.sdk.DBProvider"
+106-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:21:13-57
+107            android:authorities="com.nimble.vpn.hydra.sdk.db.provider"
+107-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:22:13-73
+108            android:exported="false"
+108-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:23:13-37
+109            android:initOrder="1" />
+109-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:24:13-34
+110
+111        <meta-data
+111-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:26:9-28:55
+112            android:name="com.anchorfree.vpnsdk.vpn_config"
+112-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:27:13-60
+113            android:resource="@raw/core_vpn_config" />
+113-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:28:13-52
+114
+115        <provider
+115-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:30:9-34:39
+116            android:name="com.anchorfree.sdk.UnifiedSDKInitProviderMain"
+116-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:31:13-73
+117            android:authorities="com.nimble.vpn.anchorfree.sdk.init.provider"
+117-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:32:13-80
+118            android:exported="false"
+118-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:33:13-37
+119            android:initOrder="100" />
+119-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:34:13-36
+120        <provider
+120-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:35:9-40:58
+121            android:name="com.anchorfree.sdk.UnifiedSDKInitProviderVpn"
+121-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:36:13-72
+122            android:authorities="com.nimble.vpn.anchorfree.sdk.init.provider.vpn"
+122-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:37:13-84
+123            android:exported="false"
+123-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:38:13-37
+124            android:initOrder="100"
+124-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:39:13-36
+125            android:process="@string/vpn_process_name" />
+125-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\5d606aa13e881b65c020064223843e47\jetified-sdk-core-3.3.1\AndroidManifest.xml:40:13-55
+126
+127        <service
+127-->[com.github.AnchorFree.hydra-vpn-android:hydratransport:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\6e47ebf95571473bfbb6d1e6e1650b9f\jetified-hydratransport-0.17.34\AndroidManifest.xml:12:9-15:19
+128            android:name="com.anchorfree.vpnsdk.transporthydra.proxyservice.HydraProxyService"
+128-->[com.github.AnchorFree.hydra-vpn-android:hydratransport:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\6e47ebf95571473bfbb6d1e6e1650b9f\jetified-hydratransport-0.17.34\AndroidManifest.xml:13:13-95
+129            android:permission="android.permission.BIND_VPN_SERVICE" >
+129-->[com.github.AnchorFree.hydra-vpn-android:hydratransport:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\6e47ebf95571473bfbb6d1e6e1650b9f\jetified-hydratransport-0.17.34\AndroidManifest.xml:14:13-69
+130        </service>
+131        <service
+131-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\53325952dc46fa21aba410b428ac68c7\jetified-sdk-notifications-3.3.1\AndroidManifest.xml:12:9-15:58
+132            android:name="com.anchorfree.sdk.SdkNotificationService"
+132-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\53325952dc46fa21aba410b428ac68c7\jetified-sdk-notifications-3.3.1\AndroidManifest.xml:13:13-69
+133            android:exported="false"
+133-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\53325952dc46fa21aba410b428ac68c7\jetified-sdk-notifications-3.3.1\AndroidManifest.xml:14:13-37
+134            android:process="@string/vpn_process_name" />
+134-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.3.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\53325952dc46fa21aba410b428ac68c7\jetified-sdk-notifications-3.3.1\AndroidManifest.xml:15:13-55
+135
+136        <activity
+136-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:16:9-21:75
+137            android:name="com.anchorfree.vpnsdk.vpnservice.StartVPNServiceShadowActivity"
+137-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:17:13-90
+138            android:label="@string/app_name"
+138-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:18:13-45
+139            android:launchMode="singleTask"
+139-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:19:13-44
+140            android:process="@string/vpn_process_name"
+140-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:20:13-55
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:21:13-72
+142
+143        <provider
+143-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:23:9-26:40
+144            android:name="com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider"
+144-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:24:13-85
+145            android:authorities="com.nimble.vpn.vpn_config"
+145-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:25:13-62
+146            android:exported="false" />
+146-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:26:13-37
+147        <provider
+147-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:27:9-30:40
+148            android:name="com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider"
+148-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:28:13-99
+149            android:authorities="com.nimble.vpn.credentials"
+149-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:29:13-63
+150            android:exported="false" />
+150-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:30:13-37
+151
+152        <service
+152-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:32:9-40:19
+153            android:name="com.anchorfree.vpnsdk.vpnservice.AFVpnService"
+153-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:33:13-73
+154            android:enabled="@bool/vpn_process_enabled"
+154-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:34:13-56
+155            android:permission="android.permission.BIND_VPN_SERVICE"
+155-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:35:13-69
+156            android:process="@string/vpn_process_name" >
+156-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:36:13-55
+157            <intent-filter>
+157-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:37:13-39:29
+158                <action android:name="android.net.VpnService" />
+158-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:38:17-65
+158-->[com.github.AnchorFree.hydra-vpn-android:corevpn:0.17.34] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\756e02a21691054769000b178d736ab6\jetified-corevpn-0.17.34\AndroidManifest.xml:38:25-62
+159            </intent-filter>
+160        </service>
+161
+162        <provider
+162-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:15:9-21:20
+163            android:name="com.anchorfree.ucr.UCRContentProvider"
+163-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:16:13-65
+164            android:authorities="com.nimble.vpn.ucr.provider"
+164-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:17:13-64
+165            android:enabled="true"
+165-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:18:13-35
+166            android:exported="false"
+166-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:19:13-37
+167            android:multiprocess="false" >
+167-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:20:13-41
+168        </provider>
+169
+170        <service
+170-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:23:9-27:19
+171            android:name="com.anchorfree.ucr.UCRService"
+171-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:24:13-57
+172            android:enabled="true"
+172-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:25:13-35
+173            android:exported="false" >
+173-->[com.github.AnchorFreePartner:ucr-analytics-android:3.1.9] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2b8646d7157b7b249c6c51df3aa04477\jetified-ucr-analytics-android-3.1.9\AndroidManifest.xml:26:13-37
+174        </service>
+175
+176        <activity
+176-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:15:9-19:75
+177            android:name="com.facebook.ads.AudienceNetworkActivity"
+177-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:16:13-68
+178            android:configChanges="keyboardHidden|orientation|screenSize"
+178-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:17:13-74
+179            android:exported="false"
+179-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:18:13-37
+180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+180-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:19:13-72
+181
+182        <provider
+182-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:21:9-24:40
+183            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+183-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:22:13-75
+184            android:authorities="com.nimble.vpn.AudienceNetworkContentProvider"
+184-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:23:13-82
+185            android:exported="false" />
+185-->[com.facebook.android:audience-network-sdk:5.10.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\675291a1ae6d792997f0afa4ff8cadd0\jetified-audience-network-sdk-5.10.1\AndroidManifest.xml:24:13-37
+186
+187        <meta-data
+187-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:49:9-51:51
+188            android:name="onesignal_app_id"
+188-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:50:13-44
+189            android:value="PASY_YOUR_ONESIGNAL_APP_ID" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+189-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:51:13-48
+190        <meta-data
+190-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:53:9-55:70
+191            android:name="onesignal_google_project_number"
+191-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:54:13-59
+192            android:value="str:REMOTE" />
+192-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:55:13-67
+193
+194        <receiver
+194-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:57:9-67:20
+195            android:name="com.onesignal.GcmBroadcastReceiver"
+195-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:58:13-62
+196            android:permission="com.google.android.c2dm.permission.SEND" >
+196-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:59:13-73
+197
+198            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+199            <intent-filter android:priority="999" >
+199-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:62:13-66:29
+199-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:62:28-50
+200                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+200-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:63:17-81
+200-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:63:25-78
+201
+202                <category android:name="com.nimble.vpn" />
+202-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:65:17-61
+202-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:65:27-58
+203            </intent-filter>
+204        </receiver>
+205        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+205-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:68:9-77
+205-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:68:19-74
+206
+207        <service android:name="com.onesignal.GcmIntentService" />
+207-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:70:9-66
+207-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:70:18-63
+208        <service
+208-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:71:9-73:72
+209            android:name="com.onesignal.GcmIntentJobService"
+209-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:72:13-61
+210            android:permission="android.permission.BIND_JOB_SERVICE" />
+210-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:73:13-69
+211        <service
+211-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:74:9-76:72
+212            android:name="com.onesignal.RestoreJobService"
+212-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:75:13-59
+213            android:permission="android.permission.BIND_JOB_SERVICE" />
+213-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:76:13-69
+214        <service
+214-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:77:9-79:72
+215            android:name="com.onesignal.RestoreKickoffJobService"
+215-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:78:13-66
+216            android:permission="android.permission.BIND_JOB_SERVICE" />
+216-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:79:13-69
+217        <service
+217-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:80:9-82:43
+218            android:name="com.onesignal.SyncService"
+218-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:81:13-53
+219            android:stopWithTask="true" />
+219-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:82:13-40
+220        <service
+220-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:83:9-85:72
+221            android:name="com.onesignal.SyncJobService"
+221-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:84:13-56
+222            android:permission="android.permission.BIND_JOB_SERVICE" />
+222-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:85:13-69
+223
+224        <activity
+224-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:87:9-89:75
+225            android:name="com.onesignal.PermissionsActivity"
+225-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:88:13-61
+226            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+226-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:89:13-72
+227
+228        <service android:name="com.onesignal.NotificationRestoreService" />
+228-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:91:9-76
+228-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:91:18-73
+229
+230        <receiver android:name="com.onesignal.BootUpReceiver" >
+230-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:93:9-98:20
+230-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:93:19-62
+231            <intent-filter>
+231-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:94:13-97:29
+232                <action android:name="android.intent.action.BOOT_COMPLETED" />
+232-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:95:17-79
+232-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:95:25-76
+233                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+233-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:96:17-82
+233-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:96:25-79
+234            </intent-filter>
+235        </receiver>
+236        <receiver android:name="com.onesignal.UpgradeReceiver" >
+236-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:99:9-103:20
+236-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:99:19-63
+237            <intent-filter>
+237-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:100:13-102:29
+238                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+238-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:101:17-84
+238-->[com.onesignal:OneSignal:3.12.7] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\196df54469108e3307efaa82755d42d9\jetified-OneSignal-3.12.7\AndroidManifest.xml:101:25-81
+239            </intent-filter>
+240        </receiver>
+241
+242        <service
+242-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\3cc197c88eb1974c3d01f322d7d23931\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:27:9-33:19
+243            android:name="com.google.firebase.components.ComponentDiscoveryService"
+243-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\3cc197c88eb1974c3d01f322d7d23931\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:28:13-84
+244            android:directBootAware="true"
+244-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+245            android:exported="false" >
+245-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\3cc197c88eb1974c3d01f322d7d23931\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:29:13-37
+246            <meta-data
+246-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\3cc197c88eb1974c3d01f322d7d23931\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
+247                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+247-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\3cc197c88eb1974c3d01f322d7d23931\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
+248                android:value="com.google.firebase.components.ComponentRegistrar" />
+248-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\3cc197c88eb1974c3d01f322d7d23931\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
+249            <meta-data
+249-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d779862833b2e38d034774aebdb702cf\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+250                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+250-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d779862833b2e38d034774aebdb702cf\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+251                android:value="com.google.firebase.components.ComponentRegistrar" />
+251-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d779862833b2e38d034774aebdb702cf\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+252        </service>
+253
+254        <receiver
+254-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
+255            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+255-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
+256            android:enabled="true"
+256-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
+257            android:exported="false" >
+257-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
+258        </receiver>
+259
+260        <service
+260-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
+261            android:name="com.google.android.gms.measurement.AppMeasurementService"
+261-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
+262            android:enabled="true"
+262-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
+263            android:exported="false" />
+263-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
+264        <service
+264-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
+265            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+265-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
+266            android:enabled="true"
+266-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
+267            android:exported="false"
+267-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
+268            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+268-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\2f34aef13058d36092587707854eb6cd\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
+269        <activity
+269-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:29:9-33:64
+270            android:name="com.google.android.gms.ads.AdActivity"
+270-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:30:13-65
+271            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+271-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:31:13-122
+272            android:exported="false"
+272-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:32:13-37
+273            android:theme="@android:style/Theme.Translucent" />
+273-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:33:13-61
+274
+275        <provider
+275-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:35:9-39:39
+276            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+276-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:36:13-76
+277            android:authorities="com.nimble.vpn.mobileadsinitprovider"
+277-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:37:13-73
+278            android:exported="false"
+278-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:38:13-37
+279            android:initOrder="100" />
+279-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\235c641806a9a96f8303df8d23a64c04\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:39:13-36
+280
+281        <activity
+281-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d7df73591dc571468c186fdd2a992bad\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+282            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+282-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d7df73591dc571468c186fdd2a992bad\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+283            android:exported="false"
+283-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d7df73591dc571468c186fdd2a992bad\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+284            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+284-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\d7df73591dc571468c186fdd2a992bad\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+285
+286        <provider
+286-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+287            android:name="com.google.firebase.provider.FirebaseInitProvider"
+287-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+288            android:authorities="com.nimble.vpn.firebaseinitprovider"
+288-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+289            android:exported="false"
+289-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+290            android:initOrder="100" />
+290-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+291
+292        <meta-data
+292-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+293            android:name="com.google.android.gms.version"
+293-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+294            android:value="@integer/google_play_services_version" />
+294-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+295        <meta-data
+295-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:13:9-15:37
+296            android:name="com.google.android.play.billingclient.version"
+296-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:14:13-73
+297            android:value="2.0.1" />
+297-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:15:13-34
+298
+299        <activity
+299-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:17:9-20:75
+300            android:name="com.android.billingclient.api.ProxyBillingActivity"
+300-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:18:13-78
+301            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+301-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:19:13-96
+302            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+302-->[com.android.billingclient:billing:2.0.1] C:\Users\Prakash Biswas\.gradle\caches\transforms-2\files-2.1\60083c931a3d3d30b5f8c430c4d69b38\jetified-billing-2.0.1\AndroidManifest.xml:20:13-72
+303    </application>
+304
+305</manifest>

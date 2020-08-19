@@ -1,0 +1,14 @@
+{
+  "config_version": "1",
+  "report_name": "hydra_kit",
+  "country": "DEFAULT",
+  "domains": {
+    "backup": [
+      "d38oiklx82uh2n.cloudfront.net",
+      "dlda0xg2rixzk.cloudfront.net"
+    ],
+    "primary": [
+      "www.metal-masters.us"
+    ]
+  }
+}

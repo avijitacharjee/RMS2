@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "894755736439",
+    "firebase_url": "https://smart-vpn-959a4.firebaseio.com",
+    "project_id": "smart-vpn-959a4",
+    "storage_bucket": "smart-vpn-959a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894755736439:android:9b4e05b2d59ee166862f72",
+        "android_client_info": {
+          "package_name": "com.nimble.vpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894755736439-0d56jte37qf0ltbr0jb26sccv668ttk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhSeFOiKZ10xyMbq1PjV0MnvJnScxTK8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894755736439-0d56jte37qf0ltbr0jb26sccv668ttk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894755736439:android:0de03048f438dc82862f72",
+        "android_client_info": {
+          "package_name": "com.oneioo.premiumvpn.vpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894755736439-0d56jte37qf0ltbr0jb26sccv668ttk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhSeFOiKZ10xyMbq1PjV0MnvJnScxTK8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894755736439-0d56jte37qf0ltbr0jb26sccv668ttk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

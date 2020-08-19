@@ -1,0 +1,7 @@
+{
+  "reconnect_settings": {
+    "exception_handlers": [],
+    "use_paused_state": true,
+    "capabilities_check": false
+  }
+}

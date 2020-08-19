@@ -1,0 +1,11 @@
+{
+  "pinningCerts": [
+
+  ],
+  "transports": [
+    {
+      "type": "com.anchorfree.ucr.transport.FakeTrackerTransport",
+      "params": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "reconnect_settings": {
+    "exception_handlers": [
+      {
+        "type": "com.anchorfree.vpnsdk.reconnect.NetworkChangeExceptionHandler",
+        "params": [
+          3
+        ]
+      },
+      {
+        "type": "com.anchorfree.vpnsdk.reconnect.NetworkRelatedExceptionHandler",
+        "params": [
+          3
+        ]
+      },
+      {
+        "type": "com.anchorfree.vpnsdk.transporthydra.reconnect.HydraInternalErrorHandler",
+        "params": [
+          3
+        ]
+      },
+      {
+        "type": "com.anchorfree.vpnsdk.transporthydra.reconnect.HydraLostConnectionHandler",
+        "params": [
+          3
+        ]
+      }
+    ]
+  }
+}

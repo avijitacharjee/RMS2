@@ -1,0 +1,19 @@
+client
+
+proto :templateProtocol:
+
+<auth-user-pass>
+:templateUserName:
+:templateUserPassword:
+</auth-user-pass>
+
+<ca>
+:templateCertificate:
+</ca>
+
+verb 3
+nobind
+route 0.0.0.0 0.0.0.0
+connect-retry 1
+connect-retry-max 1
+connect-timeout 10

@@ -1,0 +1,29 @@
+{
+  "reconnect_settings": {
+    "exception_handlers": [
+      {
+        "type": "com.anchorfree.vpnsdk.reconnect.NetworkChangeExceptionHandler",
+        "params": [
+          3
+        ]
+      },
+      {
+        "type": "com.anchorfree.vpnsdk.reconnect.NetworkRelatedExceptionHandler",
+        "params": [
+          3
+        ]
+      }
+    ],
+    "use_paused_state": true,
+    "capabilities_check": false
+  },
+  "transport_factory": {
+    "type": "anchorfree.com.common.KrakenFactory$HexaHydraTransport"
+  },
+  "captive_portal_checker": {
+    "type": "com.anchorfree.vpnsdk.vpnservice.credentials.DefaultCaptivePortalChecker"
+  },
+  "network_probe_factory": {
+    "type": "com.anchorfree.vpnsdk.network.probe.DefaultNetworkProbeFactory"
+  }
+}

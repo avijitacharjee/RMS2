@@ -1,0 +1,7 @@
+#Sat Aug 01 21:06:58 PDT 2020
+base.0=G\:\\MyProject\\Codecano Sell\\NimbleVPN\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=G\:\\MyProject\\Codecano Sell\\NimbleVPN\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes2.dex

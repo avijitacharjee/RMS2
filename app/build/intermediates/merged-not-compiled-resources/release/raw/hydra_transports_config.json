@@ -1,0 +1,13 @@
+[
+  {
+    "credentials": {
+      "params": [],
+      "type": "com.anchorfree.sdk.HydraCredentialsSource"
+    },
+    "name": "hydra",
+    "transport": {
+      "params": [],
+      "type": "com.anchorfree.vpnsdk.transporthydra.HydraTransportFactory"
+    }
+  }
+]
